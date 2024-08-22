@@ -7,7 +7,6 @@ while start < len(my_list):
     if number == 0:
         continue
     elif number < 0:
-        print('Отрицательное число:', number)
         break
     elif number == len(my_list):
         print(number)
