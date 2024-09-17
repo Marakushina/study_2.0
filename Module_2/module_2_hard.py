@@ -7,11 +7,9 @@ list_ = []
 for i in range(1, n):
     for j in range(1, n):
             sum = (i+j)
-            if n % sum == 0 and i!=j :
-                list_.append([i,j])
-def remove(list_):
-    return ([list(k) for k in {*[tuple(sorted(k)) for k in list_]}])
-result = sorted(remove(list_))
-result_str = str(result)
-result_ = "".join(n for n in result_str if  n.isdecimal())
+            if n % sum == 0 and i!=j and i<j :
+                list_.append(i)
+                list_.append(j)
+
+result_ = "".join(map(str,list_))
 print(result_)
