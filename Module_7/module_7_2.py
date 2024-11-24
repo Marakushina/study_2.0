@@ -17,7 +17,7 @@ def custom_write(file_name, strings):
 info = [
     'Текст для записи.',
     'Используйте кодировку utf-8.',
-    'Потому что есть 2 языка!',
+    'Because there are 2 languages!',
     'Спасибо!']
 
 result = custom_write('test.txt', info)
